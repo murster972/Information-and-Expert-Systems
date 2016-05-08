@@ -1,0 +1,93 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Categories of Information Systems
+		</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+		<script type="text/javascript" src="scripts/jquery-2.1.3.js"></script>
+		<script type="text/javascript" src="scripts/mobile.js"></script>
+		<script type="text/javascript" src="scripts/menu.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".dropdown_item").click(function(){
+					var $id = $(this).attr("id");
+						id_num = $id.replace("butn", "");
+						new_id = "#syst_" + id_num;
+
+					$('html, body').animate({ scrollTop: $(new_id).offset().top - 55});
+				})
+			})
+
+			window.addEventListener('resize', checkSize, false);
+			checkSize();
+		</script>
+	</head>
+	<body>
+		<div id="nav_bar_container"></div>
+		<div id="dropdown_icon">
+			<div class="hamburger" id="hb_1"></div>
+			<div class="hamburger" id="hb_2"></div>
+			<div class="hamburger" id="hb_3"></div>
+		</div>
+		<div id="dropdown">
+			<div id="dropdown_arr"></div>
+			<div id="dropdown_container">
+				<div class="dropdown_item" id="butn1"><p class="item_pos">Data Processing Systems</p></div>
+				<div class="dropdown_item" id="butn2"><p class="item_pos">Management Information Systems</p></div>
+				<div class="dropdown_item" id="butn3"><p class="item_pos">Decision Support Systems</p></div>
+				<div class="dropdown_item" id="butn4"><p class="item_pos">Executive Information System</p></div>
+				<div class="dropdown_item" id="butn5"><p class="item_pos">Expert Systems</p></div>
+			</div>
+		</div>
+		<div id="main_content_abs">
+			<div id="title" class="desktop">Categories of Information Systems</div>
+			<div id="intro_container">
+				<div id="intro" class="desktop">An information system is a group of interrelated components that work to carry out input, processing, storage, output and control actions in order to convert data into information that can be used to support forecasting, planning, control, coordination, decision making and operational activities in an organisation.<br><br>There are several categories of information system:<br>Data Processing Systems(DPS) - Operational<br>Management Information Systems(MIS) - Tactical<br>Decision Support Systems(DSS) - Tactical<br>Executive Information System(EIS) - Strategic</div>
+			</div>
+			<div id="system_containers">
+				<div class="syst_container desktop" id="syst_1">
+					<div class="syst_title">Data Processing Systems</div>
+					<div class="syst_info">
+						<p class="info_txt">
+							A Data Processing System is sometimes referred to as a Transaction Processing System (TPS), because it deals with the day-to-day transactions of an organisation. Examples include systems for accountancy, invoicing, stock control and data entry. For example, a clerk processing a customer order needs to know whether the item is in stock, what the price of the item is, as well as customer details including name and address.<br><br>Data processing systems are usually tools used at the operational level of an organisation, since most organisations at an operational level produce large amounts of data from the events that contribute to their running.<br><br>A DPS usually involves a computer at the heart of the operation. Depending on the size of the company, this could be a desktop computer, a network, a mini or mainframe computer with ‘dumb’ terminals. The system also includes the software necessary to run the computer and handle the data. The means of collecting and outputting the data may well also be included. For example, the National Lottery DPS includes terminals in shops around the country where data is collected.
+						</p>
+					</div>
+				</div>
+				<div class="syst_container desktop" id="syst_2">
+					<div class="syst_title">Management Information Systems</div>
+					<div class="syst_info">
+						<p class="info_txt">
+							An MIS is a system that converts data from internal and external sources into information, communicated in an appropriate form to managers at different levels of an organisation. The information can contribute to effective decision making or planning to be carried out.<br><br>The source of data for an MIS usually comes from numerous databases. These databases are usually the data storage for Data Processing Systems.<br><br>MIS summarise and report on the organisation´s basic operations. The basic data from the DPS is condensed and is usually presented in long reports that are produced on a regular basis.<br><br>MIS produce reports for managers interested in historic trends on a weekly, monthly and yearly basis (not on the day-to-day activities of the DPS). The information in these reports provides answers to routine pre-defined questions.<br><br>These systems are generally not very flexible and have little analytical capability. Most MIS use simple routines such as summaries and comparisons as opposed to sophisticated mathematical models or statistical techniques. 
+						</p>
+					</div>
+				</div>
+				<div class="syst_container desktop" id="syst_3">
+					<div class="syst_title">Decision Support Systems</div>
+					<div class="syst_info">
+						<p class="info_txt">
+							A DSS provides information and models in a form to help tactical and strategic decision-making. DSS support management decisionmaking by integrating: company performance data, business rules in a decision table, analytical tools and models for forecasting and planning, a simple user interface to query the system.<br><br>DSS are particularly useful when making ad-hoc, one-off decisions. These types of decisions tend to be unstructured and irregula<br><br>DSS enable a manager to explore a range of alternatives under a variety of conditions. For example, a manager may wish to know the effects on profits if sales increase and costs decreas<br><br>The source of data for a DSS tends to be a combination of summary information gathered from lower level DPS and MIS; it also includes significant information from external data sources. 
+						</p>
+					</div>
+				</div>
+				<div class="syst_container desktop" id="syst_4">
+					<div class="syst_title">Executive Information Systems</div>
+					<div class="syst_info">
+						<p class="info_txt">
+							An EIS provides senior managers with a system to assist in taking strategic and tactical decisions. Its purpose is to analyse, compare and identify trends to help the strategic direction of the organisation.<br><br>EIS address unstructured decisions and create a generalised computing and communications environment, rather than providing any fixed application or specific capability. Such systems are not designed to solve specific problems, but to tackle a changing array of problems.<br><br>EIS are designed to incorporate data about external events, such as new tax laws or competitors, and also draw summarised information from internal MIS and DSS. These systems filter, compress, and track critical data; emphasising the reduction of time and effort required to obtain information useful to strategic management. They employ advanced graphics software to provide highly visual and easy-to-use representations of complex information and current trends, but they tend not to provide analytical models.<br><br>EIS allow the user to look at specific data that has been summarised from lower levels within the organisation and then drill down to increase the level of detail, which is provided by the information systems in different areas. This is an example of data warehouse analysis, which we will discuss later.
+						</p>
+					</div>
+				</div>
+				<div class="syst_container desktop" id="syst_5">
+					<div class="syst_title">Expert Systems</div>
+					<div class="syst_info">
+						<p class="info_txt">
+							An expert system is a computer program that tries to emulate human reasoning. It does this by combining the knowledge of human experts and then, following a set of rules, it draws inferences.<br><br>An expert system is made up of three parts: a knowledge base; an inference engine; a user interface.<br><br>Reasons for expert systems in business:<br>To store information in an active form as organisational memory, creating an organisational knowledge base that many employees can examine and preserving expertise that might be lost when an acknowledged expert leaves the organisation.<br><br>To create a mechanism that is not subject to human feelings, such as fatigue and worry. This may be especially useful when jobs may be environmentally, physically or mentally dangerous to humans. These systems may also be useful advisers in times of crisis.<br><br>To enhance the organisation's knowledge base by generating solutions to specific problems that are too substantial and complex to be analysed by human beings in a short period of time.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
